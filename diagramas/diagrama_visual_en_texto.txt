@@ -1,0 +1,13 @@
+          Zona Norte
+               |
+             3 km
+               |
+Centro ---- Avenida1 ---- Hospital
+  |                          |
+4 km                      2 km
+  |                          |
+Mercado                 Zona Este
+  |
+6 km
+  |
+Zona Sur

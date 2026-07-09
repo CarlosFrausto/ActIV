@@ -1,0 +1,43 @@
+@startuml
+
+start
+
+:Solicitar código del paquete;
+
+if (¿Existe?) then (No)
+
+:Error;
+
+stop
+
+endif
+
+:Solicitar repartidor;
+
+if (¿Existe?) then (No)
+
+:Error;
+
+stop
+
+endif
+
+:Buscar ruta mediante DFS;
+
+if (¿Hay ruta?) then (Sí)
+
+:Asignar paquete;
+
+:Mostrar ruta;
+
+:Mostrar distancia;
+
+else
+
+:No existe ruta;
+
+endif
+
+stop
+
+@enduml

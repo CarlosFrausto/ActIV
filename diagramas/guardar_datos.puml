@@ -1,0 +1,21 @@
+@startuml
+
+start
+
+:Convertir clientes en diccionarios;
+
+:Guardar clientes.csv;
+
+:Convertir paquetes en diccionarios;
+
+:Guardar paquetes.csv;
+
+:Convertir repartidores en diccionarios;
+
+:Guardar repartidores.csv;
+
+:Confirmar guardado;
+
+stop
+
+@enduml

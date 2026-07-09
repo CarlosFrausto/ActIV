@@ -1,0 +1,29 @@
+@startuml
+
+start
+
+:Solicitar código;
+
+if (¿Existe?) then (No)
+
+:Mostrar "No encontrado";
+
+stop
+
+endif
+
+:Obtener paquete;
+
+:Obtener cliente;
+
+:Mostrar cliente;
+
+:Mostrar destino;
+
+:Mostrar estado;
+
+:Mostrar peso;
+
+stop
+
+@enduml

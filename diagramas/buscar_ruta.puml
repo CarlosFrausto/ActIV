@@ -1,0 +1,33 @@
+@startuml
+
+start
+
+:Recibir origen y destino;
+
+if (¿Origen = Destino?) then (Sí)
+
+:Retornar ruta;
+
+stop
+
+endif
+
+:Marcar nodo como visitado;
+
+repeat
+
+:Seleccionar vecino;
+
+if (¿No visitado?) then (Sí)
+
+:Llamada recursiva DFS;
+
+endif
+
+repeat while (¿Quedan vecinos?)
+
+:No existe camino;
+
+stop
+
+@enduml

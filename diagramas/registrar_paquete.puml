@@ -1,0 +1,47 @@
+@startuml
+
+start
+
+:Solicitar código;
+
+if (¿Código existe?) then (Sí)
+
+:Mostrar error;
+
+stop
+
+endif
+
+:Solicitar ID del cliente;
+
+if (¿Cliente existe?) then (No)
+
+:Mostrar error;
+
+stop
+
+endif
+
+:Solicitar peso;
+
+:Solicitar destino;
+
+if (¿Destino existe en el grafo?) then (No)
+
+:Mostrar error;
+
+stop
+
+endif
+
+:Crear paquete;
+
+:Agregar al diccionario;
+
+:Agregar al historial del cliente;
+
+:Confirmar registro;
+
+stop
+
+@enduml

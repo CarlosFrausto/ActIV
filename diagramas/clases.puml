@@ -1,0 +1,53 @@
+@startuml
+
+class Cliente{
+-id
+-nombre
+-direccion
+-historial_pedidos
+
++agregar_pedido()
+}
+
+class Paquete{
+-codigo
+-peso
+-destino
+-estado
+-cliente
+}
+
+class Repartidor{
+-nombre
+-vehiculo
+-zona_actual
+-paquetes_asignados
+
++asignar()
+}
+
+class Ciudad{
+-grafo
+
++buscar_ruta()
+}
+
+class Gestor{
++crear_cliente()
++crear_repartidor()
++registrar_paquete()
++buscar_paquete()
++cambiar_estado()
++asignar_paquete()
++guardar_datos()
++cargar_datos()
+}
+
+Cliente "1" --> "*" Paquete
+Repartidor "1" --> "*" Paquete
+Gestor --> Cliente
+Gestor --> Paquete
+Gestor --> Repartidor
+Gestor --> Ciudad
+
+@enduml
